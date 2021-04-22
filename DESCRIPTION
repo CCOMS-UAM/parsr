@@ -11,7 +11,7 @@ Description: This package is intended to help following the "fail fast"
     It also intends to allow enough flexibility to embrace the principle of
     "being lax in your input".
 Depends:
-    R               (>= 4.0.5),
+    R               (>= 4.0.3),
     assertive.extra (>= 0.0.0)
 License: file LICENSE
 BugReports: https://github.com/CCOMS-UAM/parsr/issues
