@@ -4,14 +4,14 @@
 #' @param default
 #'
 #' @return
-#' @import assertive.extra::assert_is_a_bool
+#' @import assertive::assert_is_a_bool
 #' @export
 #'
 #' @examples
 parse_bool <- function(arg, default = "warning") {
 
   ## TODO: severities
-  assertive.extra::assert_is_a_bool(arg, severity = default)
+  assertive::assert_is_a_bool(arg, severity = default)
   as.logical(arg[1])
 }
 
@@ -21,14 +21,14 @@ parse_bool <- function(arg, default = "warning") {
 #' @param default
 #'
 #' @return
-#' @import assertive.extra::assert_is_a_number
+#' @import assertive::assert_is_a_number
 #' @export
 #'
 #' @examples
 parse_scalar <- function(arg, default = "warning") {
 
   ## TODO: severities
-  assertive.extra::assert_is_a_number(arg, severity = default)
+  assertive::assert_is_a_number(arg, severity = default)
   as.double(arg[1])
 }
 
@@ -82,14 +82,14 @@ parse_natural_number <- function(arg, default = "warning") {
 #' @param ...
 #'
 #' @return
-#' @import assertive.extra::assert_is_a_string
+#' @import assertive.types::assert_is_a_string
 #' @export
 #'
 #' @examples
 parse_string <- function(arg, default = "warning", ...) {
 
   ## TODO: severities
-  assertive.extra::assert_is_a_string(arg, severity = default)
+  assertive.types::assert_is_a_string(arg, severity = default)
   as.character(arg[1])
 }
 
